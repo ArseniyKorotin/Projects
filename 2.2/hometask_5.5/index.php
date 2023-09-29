@@ -13,7 +13,7 @@ function func($num) {
 
 for ($k = 0; $k < $m; $k++) {
     for ($x = 0; $x < $n; $x++) {
-        $a[$k][$x] = floatval(rand(-9, 9)); // Заполняем массив $a случайными значениями
+        $a[$k][$x] = floatval(rand(-9, 9));
     }
 }
 
