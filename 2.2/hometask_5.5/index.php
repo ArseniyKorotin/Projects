@@ -21,4 +21,4 @@ $positive = array_filter(array_merge(...$a), 'func');
 $sum = array_sum($positive);
 
 print_r($a);
-echo $sum;
+echo "\nСумма всех элементов массива: ".$sum;
