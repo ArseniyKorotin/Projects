@@ -9,23 +9,17 @@ $words = [
     'World' => 'Світ'
 ];
 
-echo "Eng-Ukr Dictionary\n\n";
-foreach ($words as $key => $value) {
-    if (!is_array($value)) {
-        echo "$value: $key\n";
-    } else {
-        $count = count($value);
-        foreach ($value as $i => $v) {
-            echo $v;
-            if ($i < $count -1) {
-                echo ", ";
-            } else {
-                echo ": ";
-            }
-        }
-        echo "$key \n";
+$result = [];
 
+foreach ($words as $key => $value) {
+    if(!is_array($words[$value])) {
+        $result[] = array_flip($words[$value]);
     }
-    echo "\n";
+    // else {
+    //     foreach ($value as $v => $val) {
+            
+    //     }
+    // }
 }
-echo "\n\n";
+
+print_r($result);
