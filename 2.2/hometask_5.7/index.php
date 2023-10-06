@@ -12,14 +12,12 @@ $words = [
 $result = [];
 
 foreach ($words as $key => $value) {
-    if(!is_array($words[$value])) {
-        $result[] = array_flip($words[$value]);
+    if (is_array($value)) {
+        $result[implode(', ', $value)] = $key;
+        unset($words[$key]);
     }
-    // else {
-    //     foreach ($value as $v => $val) {
-            
-    //     }
-    // }
 }
 
-print_r($result);
+$w = array_flip($words) + $result;
+ksort($w);
+print_r($w);
