@@ -1,1 +1,0 @@
-a:3:{i:0;a:3:{s:5:"title";s:21:"The Lord of the Rings";s:6:"author";s:25:"John Ronald Reuel Tolkien";s:4:"year";i:1954;}i:1;a:3:{s:5:"title";s:39:"Fantastic Beasts and Where to Find Them";s:6:"author";s:13:"J. K. Rowling";s:4:"year";i:2001;}i:2;a:3:{s:5:"title";s:9:"Star wars";s:6:"author";s:12:"George Lucas";s:4:"year";i:1977;}}
