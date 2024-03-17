@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      .input-container {
+        display: flex;
+        margin-bottom: 10px;
+      }
+
+      .input-container label {
+        width: 75px; /* Ширина метки */
+      }
+
+      .input-container input {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
     <h2>Input birthday date</h2>
     <form action="action_file.php" method="post">
-    <input type="date" name="birthdate" id="birthdate">
-    <label for="birthdate">Birthdate:</label>
-    <input type="submit" value="Submit">
+      <div class="input-container">
+        <label for="day">Day:</label>
+        <input type="number" name="day" id="day" required />
+      </div>
+      <div class="input-container">
+        <label for="month">Month:</label>
+        <input type="number" name="month" id="month" required />
+      </div>
+      <div class="input-container">
+        <label for="year">Year:</label>
+        <input type="number" name="year" id="year" required />
+      </div>
+
+      <input type="submit" value="OK" />
     </form>
-</body>
+  </body>
 </html>
