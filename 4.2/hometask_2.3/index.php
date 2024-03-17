@@ -57,7 +57,7 @@ function compare_birthdates($a, $b)
     }
 }
 
-usort($data_birthday, 'compare_birthdates');
+uasort($data_birthday, 'compare_birthdates');
 
 foreach ($data_birthday as $key => $value) {
     $date_info = getdate($value);
