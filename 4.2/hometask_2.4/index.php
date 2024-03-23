@@ -38,7 +38,7 @@
     <?php
     function calendar()
     {
-        $arr_days = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
+        $arr_days = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
 
         print_r("<tr>");
         // Выводим названия дней недели
@@ -56,7 +56,7 @@
             $t = strtotime("-" . ($current_day_of_week - $i) . " day");
             // Получаем номер дня месяца
             $day_number = date("d", $t);
-            $class = ($i == 1 || $i == 7) ? 'weekend' : 'weekday';
+            $class = ($i == 7) ? 'weekend' : 'weekday';
             if ($day_number == $today) {
                 $class .= ' today';
             }
