@@ -1,4 +1,6 @@
 <?php
+header("Refresh:1");
+
 $end_date = mktime(20, 30, 48, 8, 12, 2025);
 
 $current_date = time();
