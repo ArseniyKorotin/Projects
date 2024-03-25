@@ -1,0 +1,3 @@
+<?php
+const TOKEN = "7187646976:AAE77ZdV3GHiuIrDOtf-VM6v5hGaZuUB3Y0";
+const CHAT_ID = 816647227;
