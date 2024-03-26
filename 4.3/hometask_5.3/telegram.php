@@ -1,5 +1,5 @@
 <?php
-include "credits.php";
+include "bot_credits.php";
 
 // Змінні $name, $phone, $mail отримують дані з форми
 $name = $_POST['name'];
@@ -17,7 +17,7 @@ $arr = [
 
 $text = "";
 
-// За допомогою циклу foreach формуємо рядок $text з даных масиву $arr
+// За допомогою циклу foreach формуємо рядок $text з даних масиву $arr
 // Функція rawurlencode кодує кириличні символи в URL-адреси
 foreach ($arr as $key => $value) {
     $text .= rawurlencode("<b>") . rawurlencode($key) . rawurlencode("</b> ") . rawurlencode($value) . "%0A";
